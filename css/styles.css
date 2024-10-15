@@ -1,0 +1,837 @@
+:root {
+  --hover-bg-color: #ABB2B9;
+  --border-radius: 5px;
+}
+
+* { 
+    padding: 0%;
+    margin: 0%;
+    color: #fff;
+    background-color: black;
+    font-family: "Poppins";
+    
+}
+
+/*hedaer*/
+header, p{
+    font-size: 30px;
+    
+}
+
+li {
+    font-size: 17px;
+    list-style: none;
+    margin-left: 25px;
+    text-transform: uppercase;
+    
+}
+
+#primero {
+    font-size: 30px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+.menu p{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.menu a{
+  padding-right: 30px;
+ text-decoration: none;
+ transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+.menu a:hover{
+  background-color: var(--hover-bg-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+
+
+}
+
+.lista {
+    display: flex;
+}
+
+.contenedor-titular{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 160px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  
+  
+}
+.titular {
+  max-width: 80%; /* Ocupa el 50% del ancho del contenedor */
+  color: #fff;
+  
+    
+}
+.contactar {
+  margin-top: 20px;
+}
+/* Estilo del botón "Contactame" */
+.contactame {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #c6ff66; 
+    color: #000;
+    border-radius: 30px; /* Bordes redondeados */
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contactame:hover {
+    background-color: #aaff33; 
+  }
+  
+  /* Estilo de los iconos */
+  .icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #333; /* Color de fondo oscuro */
+    border-radius: 50%; 
+    text-align: center;
+    line-height: 40px; /* Centrar icono */
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .icon i {
+    color: #c6ff66; /* Color del icono */
+    font-size: 18px;
+  }
+  
+  .icon:hover {
+    background-color: #555; /* Color de fondo al hacer hover */
+  }
+
+  .perfil{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    background-color: #333; /* Color de fondo oscuro */
+    border-radius: 5px; 
+    line-height: 40px; /* Centrar verticalmente el icono */
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    
+  }
+  .perfil img{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+/*Seccion proyectos*/
+  .Section-proyectos{
+    width: 100%;
+    border-top: 1px solid #fefefe;
+    padding: 50px 0;
+  }
+.section-proyectos-encabezado{
+  max-width: 50%;
+  margin-left: 50px;
+}
+
+.section-proyectos-encabezado h2{
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.section-proyectos-encabezado p{
+  font: 20px;
+  line-height: 1.6;
+}
+
+/*Seccion proyecyos imagen*/
+.contenedor-proyectos{
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding-top: 30px;
+  align-items: center; /* Alinea verticalmente */
+  justify-content: space-between; /* Espacio entre elementos */
+  padding: 20px; 
+  margin: 10px; 
+  
+  
+}
+.contenedor-proyectos-img{
+  position: relative; 
+  display: flex;
+    width: 50%;
+    max-width: 630px;
+    height: 630px;
+    background-color: #333; 
+    border-radius: 5px; 
+    line-height: 40px; 
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    padding-top: 20px;
+    
+}
+
+.contenedor-proyectos-img button{
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  padding: 10px 25px;
+  background-color: #c6ff66;
+  color: #000;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.contenedor-proyectos-img img{
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/*modal*/
+
+
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  padding: 20PX;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%; 
+  height:85%; 
+  overflow: auto; 
+  background-color: rgb(162, 153, 153);
+  background-color: rgba(255, 255, 255, 0.4); 
+  border-radius: 10px;
+}
+
+/* Modal Conten*/
+.modal-content {
+  border-radius: 15px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 650px;
+}
+.modal-content img{
+  border-radius: 15px;
+  padding: 10px;
+}
+.modal-content div{
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* tamaño de igaen de acuerdo al cambio*/
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/*apartado para el vidoe*/
+
+.contenedor-proyectos-descripcion{
+    flex: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    margin-right: 100px;
+    font-size: large;
+}
+
+.contenedor-proyectos-descripcion h3{
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.contenedor-proyectos-descripcion p{
+  font-size: 26px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Tabla de información del proyecto */
+.tab.titulo {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.tab.titulo th, .tab.titulo td {
+  border-bottom: 1px solid #fff;
+  padding: 10px 0;
+}
+
+.tab.titulo th {
+  text-align: left;
+  font-weight: bold;
+  color: #aaa;
+  padding-right: 20px;
+}
+
+.botones-proyectos{
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: large;
+  
+
+}
+/*modal para boton de video*/
+.botones-proyectos button{
+  font-weight: bold;
+  font-size: large;
+  border:none;
+  text-decoration: underline;
+}
+
+
+
+/*modal*/
+
+.modalv {
+  display: none; /* Hidden default */
+  position: fixed; 
+  z-index: 1; /* Sit on top */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%; 
+  height: 85%; 
+  overflow: auto; 
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+}
+
+/* Modal Content */
+.modalvideo-content {
+
+  margin: 10px auto 10px;
+  width: 100%;
+  max-width: 650px;
+  border-radius: 15px;
+}
+
+/* The Close Button */
+.closev {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+
+
+.closev:hover,
+.closev:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Estilo para el video */
+#myVideo {
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+  max-height: 60vh;
+  border-radius: 15px;
+
+}
+
+/* Agregando contenido al baton*/
+.content {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
+  padding: 20px;
+  border-radius: 15px;
+}
+.content h1, p{
+  background-color: transparent;
+}
+
+/*estilo de boton*/
+#myBtnVid {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtnVid:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Responsive del boton  */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+.botones-proyectos i{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #333; 
+  border-radius: 50%; 
+  text-align: center;
+  line-height: 40px; 
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.demo, .github-ref {
+color: #aaff33;
+}
+
+/*seccion  acerca de mi*/
+.about-me{
+  display: flex;
+  border-top: 1px solid #fefefe; 
+  justify-content: space-between;
+  align-items: flex-start;  
+    padding: 50px;
+    margin: 50px auto;
+    gap: 20px;
+    
+    
+}
+.titular-about {
+  flex: 0 0 30%; /* Ajustar el ancho a un 30% */
+  display: flex;
+  font-size: 48px;
+  margin-bottom: 20px;
+  padding-right: 50px;
+  align-items: center; 
+  text-align: left;
+  color: #fefefe;
+}
+
+.subtitulo-content {
+  flex: 0 0 65%; /* Asigna más espacio*/
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left; /* izquierda */
+  color: #fefefe; 
+}
+
+.subtitulo-content h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subtitulo-content p {
+  font-size: 26px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.subtitulo-content a {
+  font-weight: bold;
+  font-size: large;
+  color: #c3ff00; 
+  
+}
+
+.subtitulo-content a:hover {
+  text-decoration: underline; 
+}
+/*seccion para footer de contacto*/
+
+.lets-contact-section{
+  border-top: 1px solid #fefefe; 
+  display: flex;
+  justify-content: space-between;
+  padding: 50px; /* Padding de 50px alrededor */
+  background-color: #000; 
+  color: #fff; 
+}
+
+.lets-contact{
+  flex: 1; /*estamos diciendo que el elemento debe crecer para llenar el espacio disponible, encogerse si es necesario y tener una base de tamaño de 0.*/
+}
+
+ .lets-contact h1{
+  font-size: 68px;
+    margin-bottom: 20px; /*Espacio debajo del título */
+    font-weight: bold;
+    text-transform: uppercase; 
+    color: #fefefe;
+}
+.lets-contact p{
+  font-size: 26px; 
+    margin-bottom: 10px; /* Espacio entre los párrafos */
+    line-height: 1.6; /* Espaciado de línea */
+}
+.lets-contact a{
+  
+    text-decoration: underline  #c3ff00; 
+    font-weight: bold; 
+}
+
+.lets-contact a:hover {
+  color: #aaff00; 
+}
+
+.lets-contact-icons {
+  display: flex;
+  justify-content: flex-start; /* izquierda */
+  gap: 20px; /* Espacio entre cada icono */
+  margin-top: 20px; /* Margen superior*/
+  align-items: center; 
+
+}
+.lets-contact-icons ul {
+  display: flex; /*línea horizontal */
+  justify-content: flex-start; 
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  gap: 20px; /* Espacio*/
+}
+
+.lets-contact-icons ul li {
+  list-style: none; 
+}
+
+.lets-contact-icons ul li a {
+  font-size: 32px; 
+  color: #c3ff00; 
+  transition: color 0.3s ease; /*Transición suave*/
+}
+
+.lets-contact-icons ul li a:hover {
+  color: #aaff00; 
+}
+
+
+.lets-contact-icons a {
+  margin-right: 15px; 
+  font-size: 24px; 
+  color: #c3ff00; 
+}
+.lets-contact-icons i{
+  color: #aaff33;
+}
+
+.lets-contact-icons a:hover {
+  color: #aaff00; 
+}
+
+
+/*formulario*/
+.content-form{
+  display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding-right: 50px; /*espacio alrededor*/
+    width: 40%;
+}
+.lets-contact-form{
+  flex: 2; /* El formulario ocupa 2/3 del ancho disponible */
+    margin-left: auto; 
+    width: 40%;
+
+}
+
+form .field{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+ padding-bottom: 30px;
+
+ 
+}
+form label{
+ font-size: 18px;
+ font-weight: bold; 
+ color: #ffffff;
+ margin-bottom: 10px; /*Espacio label-input*/
+ display: block; /* Toda la linea*/
+ 
+}
+form input,
+form textarea {
+    width: 100%; /*Apariencia uniforme*/
+    padding: 15px; 
+    margin-bottom: 20px; 
+    border: 1px solid #333; 
+    border-radius: 5px; 
+    background-color: #222; 
+    color: #fff; 
+    font-size: 16px;
+    transition: border-color 0.3s ease; 
+}
+form input:focus,
+form textarea:focus {
+    border-color: #c3ff00; 
+    outline: none; 
+}
+form textarea {
+  height: 150px; 
+  resize: vertical; 
+}
+
+form button {
+  background-color: #c3ff00; 
+  border: none;
+  border-radius: 25px; 
+  padding: 15px 30px; /* Espacio interno del botón */
+  color: #000; 
+  font-size: 18px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+form button:hover {
+  background-color: #aaff00; 
+}
+
+ input[type="submit"] {
+  background-color: #c3ff00; 
+  border: none;
+  border-radius: 25px; 
+  padding: 15px 30px; 
+  color: #000; 
+  font-size: 18px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.custom-popup-class {
+  background-color: #424242 !important;
+  border-radius: 15px !important; 
+}
+.custom-title-class {
+  color: #ffffff !important;
+  font-weight: bold !important;
+}
+.custom-html-container-class {
+  color: #ffffff !important;
+}
+.custom-icon-class {
+  border-color: #4CAF50 !important; 
+}
+.custom-confirm-button-class {
+  background-color: #4CAF50 !important; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important; 
+}
+.custom-popup-class .swal2-success-ring {
+  background-color: rgba(76, 175, 80, 0.3) !important; 
+}
+.swal-custom-popup {
+  border-radius: 10px; /* Esquinas redondeadas para la alerta */
+  box-shadow: 0px 4px 20px rgba(245, 240, 240, 0.2); /* Sombras para hacerla más elegante */
+}
+
+
+/*DISEÑO RESPONSIVE*/
+
+/*Para pantallas más pequeñas*/
+@media (max-width: 1024px) {
+  
+  .menu {
+    flex-direction: column; /* El menú se pone verticalmente */
+    align-items: flex-start; /* Alinea elementos a la izquierda */
+    padding: 20px;
+  }
+
+  .menu p {
+    margin-left: 0; /*Sin margen lateral */
+  }
+
+  .lista {
+    flex-direction: column; 
+  }
+
+  .contenedor-titular {
+    padding: 80px 20px; 
+  }
+
+  .titular {
+    max-width: 100%; 
+  }
+
+  .perfil {
+    width: 100%; 
+    height: auto; /*Mantener la proporción*/
+  }
+  
+  .perfil img {
+    width: 100%; 
+    height: auto; 
+  }
+  
+  /* Ajustes de los proyectos */
+  .contenedor-proyectos {
+    flex-direction: column; 
+    align-items: center; /*Elementos al centro*/
+  }
+  
+  .contenedor-proyectos-img {
+    width: 100%; 
+    max-width: 400px; /*Tamaño maximo con el fin de evitar su deformacion */
+    height: auto; 
+  }
+
+  .contenedor-proyectos-descripcion {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    text-align: center; 
+  }
+
+  /* Ajustes de la sección "about-me" */
+  .about-me {
+    flex-direction: column; 
+    padding: 20px; 
+  }
+  
+  .titular-about, .subtitulo-content {
+    flex: 0 0 100%; /* Ambos elementos ocupan el 100% del ancho */
+    text-align: center; 
+  }
+
+  .titular-about {
+    padding-right: 0; 
+    margin-bottom: 30px; 
+  }
+
+  /* Ajustes para la sección "Contactar*/
+  .lets-contact-section {
+    flex-direction: column; 
+    padding: 30px 20px; 
+  }
+
+  .lets-contact, .content-form {
+    width: 100%; 
+    margin-bottom: 30px; 
+  }
+
+  .lets-contact h1 {
+    font-size: 48px; 
+  }
+
+  .lets-contact p {
+    font-size: 18px; 
+  }
+
+  .content-form {
+    padding: 0; 
+  }
+
+  /* Formulario */
+  form {
+    width: 100%; /*Se le asigna el mayor tamaño a la */
+  }
+  
+}
+
+/*Pantallas pequeñas*/
+@media (max-width: 600px) {
+  
+  header, p {
+    font-size: 24px; /*Reduce texto*/
+  }
+  
+  .menu a {
+    padding-right: 10px; 
+  }
+
+  .titular {
+    font-size: 24px; 
+  }
+
+  .section-proyectos-encabezado h2 {
+    font-size: 32px; 
+  }
+  
+  .section-proyectos-encabezado p {
+    font-size: 16px; 
+  }
+  
+  .contenedor-proyectos-descripcion h3 {
+    font-size: 32px; 
+  }
+
+  .contenedor-proyectos-descripcion p {
+    font-size: 18px; 
+  }
+
+  /* Ajustes del formulario de contacto */
+  form label {
+    font-size: 16px; 
+  }
+
+  form input,
+  form textarea {
+    font-size: 14px; 
+  }
+
+  form button {
+    font-size: 16px; 
+  }
+}
+
