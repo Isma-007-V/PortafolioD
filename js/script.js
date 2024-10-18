@@ -135,7 +135,7 @@ window.onclick = function(event) {
     if (event.target.classList.contains('modal')) {
         closeModal(event.target);
     }
-}*/
+}
 //*************************************************************************** */
 // modal para contenedor de todo el contenido de video
 var modalV = document.getElementById("myModalv");
