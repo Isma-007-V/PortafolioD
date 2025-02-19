@@ -62,6 +62,10 @@ var modal4 = document.getElementById("myModal4");
 var modal5 = document.getElementById("myModal5");
 var modal6 = document.getElementById("myModal6");
 var modal7 = document.getElementById("myModal7");
+var modal8 = document.getElementById("myModal8");
+
+
+
 
 
 
@@ -74,6 +78,7 @@ var btn4 = document.getElementById("myBtn4");
 var btn5 = document.getElementById("myBtn5");
 var btn6 = document.getElementById("myBtn6");
 var btn7 = document.getElementById("myBtn7");
+var btn8 = document.getElementById("myBtn8");
 
 
 
@@ -122,6 +127,10 @@ btn7.onclick = function(event){
   event.preventDefault();
   openModal(modal7)
 }
+btn8.onclick = function(event){
+  event.preventDefault();
+  openModal(modal8)
+  }
 
 // Cuando el usuario hace clic en <span> (x), cierra el modal correspondiente
 for (var i = 0; i < spans.length; i++) {
