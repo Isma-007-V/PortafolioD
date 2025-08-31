@@ -7,7 +7,8 @@ document.getElementById('form')
     btn.value = 'Sending...';
     
     const serviceID = 'default_service';
-    const templateID = 'template_h1pnq5p';
+    
+    const templateID = 'template_7xtugri';
     
     emailjs.sendForm(serviceID, templateID, this)
       .then(() => {
@@ -63,6 +64,8 @@ var modal5 = document.getElementById("myModal5");
 var modal6 = document.getElementById("myModal6");
 var modal7 = document.getElementById("myModal7");
 var modal8 = document.getElementById("myModal8");
+var modal9 = document.getElementById("myModal9")
+
 
 
 
@@ -79,7 +82,7 @@ var btn5 = document.getElementById("myBtn5");
 var btn6 = document.getElementById("myBtn6");
 var btn7 = document.getElementById("myBtn7");
 var btn8 = document.getElementById("myBtn8");
-
+var btn9 = document.getElementById("myBtn9");
 
 
 // Obtener los elementos <span> que cierran los modales
@@ -130,6 +133,10 @@ btn7.onclick = function(event){
 btn8.onclick = function(event){
   event.preventDefault();
   openModal(modal8)
+  }
+btn9.onclick = function(event){
+  event.preventDefault();
+  openModal(modal9)
   }
 
 // Cuando el usuario hace clic en <span> (x), cierra el modal correspondiente

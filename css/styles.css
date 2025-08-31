@@ -222,8 +222,8 @@ li {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 70%; 
-  height:85%; 
+  width: 65%; 
+  height:65%; 
   overflow: auto; 
   background-color: rgb(162, 153, 153);
   background-color: rgba(255, 255, 255, 0.4); 
@@ -242,6 +242,7 @@ li {
   border-radius: 15px;
   padding: 10px;
 }
+
 .modal-content div{
   font-size: 20px;
   font-weight: bold;
