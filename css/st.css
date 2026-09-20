@@ -1,0 +1,275 @@
+.section-certification-me{
+
+  display: flex;
+  flex-wrap: wrap; /*Cambio*/
+  border-top: 1px solid #fefefe;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  margin: 50px auto;
+  gap: 20px;
+    
+    
+}
+.section-certificacion-encabezado{
+  
+  max-width: 50%;
+  margin-left: 50px;
+  
+}
+
+.section-certificacion-encabezado h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.section-certificacion-encabezado p{
+  font: 20px;
+  line-height: 1.6;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  max-width: 300px;
+  border-radius: 15px;
+  margin: 10px auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.card p button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #c3ff00;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 22px;
+  
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/* Slider*/
+.mySlides {display: flex}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*modal*/
+
+/* The Modal (background) */
+.modalSC {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-SC {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 10px solid #888;
+  border-radius: 20px;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.closeSC {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeSC:hover,
+.closeSC:focus {
+  color: #c3ff00;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-header-SC {
+  padding: 2px 16px;
+  background-color: #000000;
+  
+  
+}
+.modal-body-SC {
+  padding: 2px 16px;}
+.modal-footer-SC {
+  padding: 2px 16px;
+  background-color: #000000;
+  color: white;
+}
+
+/*Breakpoint*/
+@media (max-width: 1024px) {
+  .section-certification-me {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-certificacion-encabezado h2 {
+    font-size: 36px;
+  }
+  .slideshow-container {
+    max-width: 500px;
+  }
+}
+
+/* Teléfonos grandes */
+@media (max-width: 768px) {
+  .section-certificacion-encabezado h2 {
+    font-size: 30px;
+  }
+  .section-certificacion-encabezado p {
+    font-size: 28px;
+  }
+  .slideshow-container {
+    max-width: 400px;
+  }
+  .modal-content-SC {
+    width: 90%;
+  }
+}
+
+/* Teléfonos pequeños */
+@media (max-width: 480px) {
+  .section-certification-me {
+    padding: 20px;
+  }
+  .card {
+    max-width: 90%;
+  }
+  .prev, .next {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .modal-content-SC {
+    width: 95%;
+    border-width: 5px;
+  }
+}

@@ -44,6 +44,7 @@ li {
   padding-right: 30px;
  text-decoration: none;
  transition: background-color 0.3s ease, border-radius 0.3s ease;
+ font-size: 22px;
 }
 .menu a:hover{
   background-color: var(--hover-bg-color);
@@ -150,7 +151,7 @@ li {
   margin-left: 50px;
 }
 
-.section-proyectos-encabezado h2{
+.section-proyectos-encabezado h2 {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -468,7 +469,7 @@ color: #aaff33;
   color: #fefefe;
 }
 
-.subtitulo-content {
+.subtitulo-content{
   flex: 0 0 65%; /* Asigna más espacio*/
   display: flex;
   flex-direction: column;
@@ -499,6 +500,8 @@ color: #aaff33;
 .subtitulo-content a:hover {
   text-decoration: underline; 
 }
+
+
 /*seccion para footer de contacto*/
 
 .lets-contact-section{
@@ -759,6 +762,7 @@ form button:hover {
     padding-right: 0; 
     margin-bottom: 30px; 
   }
+  
 
   /* Ajustes para la sección "Contactar*/
   .lets-contact-section {

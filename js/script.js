@@ -193,3 +193,140 @@ function myFunction() {
     btnV.innerHTML = "Play";
   }
 }
+
+// Galeria
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+//modal C
+// Get the modal
+var modalSC = document.getElementById("myModalSC");
+
+// Get the button that opens the modal
+var btnSC = document.getElementById("myBtnSC1");
+
+// Get the <span> element that closes the modal
+var spanSC = document.getElementsByClassName("closeSC")[0];
+
+// When the user clicks the button, open the modal 
+btnSC.onclick = function() {
+  modalSC.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanSC.onclick = function() {
+  modalSC.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalSC) {
+    modalSC.style.display = "none";
+  }
+}
+
+//modal C
+// Get the modal
+var modalSC2 = document.getElementById("myModalSC2");
+
+// Get the button that opens the modal
+var btnSC2 = document.getElementById("myBtnSC2");
+
+// Get the <span> element that closes the modal
+var spanSC2 = document.getElementById("closeSC2");
+
+// When the user clicks the button, open the modal 
+btnSC2.onclick = function() {
+  modalSC2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanSC2.onclick = function() {
+  modalSC2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalSC2) {
+    modalSC2.style.display = "none";
+  }
+}
+
+//modal C
+// Get the modal
+var modalSC3 = document.getElementById("myModalSC3");
+
+// Get the button that opens the modal
+var btnSC3 = document.getElementById("myBtnSC3");
+
+// Get the <span> element that closes the modal
+var spanSC3 = document.getElementById("closeSC3");
+
+// When the user clicks the button, open the modal 
+btnSC3.onclick = function() {
+  modalSC3.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanSC3.onclick = function() {
+  modalSC3.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalSC3) {
+    modalSC3.style.display = "none";
+  }
+}
+
+//modal C
+// Get the modal
+var modalSC4 = document.getElementById("myModalSC4");
+
+// Get the button that opens the modal
+var btnSC4 = document.getElementById("myBtnSC4");
+
+// Get the <span> element that closes the modal
+var spanSC4 = document.getElementById("closeSC4");
+
+// When the user clicks the button, open the modal 
+btnSC4.onclick = function() {
+  modalSC4.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanSC4.onclick = function() {
+  modalSC4.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalSC4) {
+    modalSC4.style.display = "none";
+  }
+}
